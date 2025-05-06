@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logic Gates</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .gate {
+      background-color: #2e2e2e;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    .gate h2 {
+      margin-top: 0;
+    }
+    .truth-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    .truth-table th, .truth-table td {
+      border: 1px solid #444;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    .description {
+      margin-top: 0.5rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Learn Logic Gates</h1>
+
+  <div class="gate">
+    <h2>AND Gate (A && B)</h2>
+    <p class="description">Both must be 1 for the result to be 1, otherwise 0.</p>
+    <table class="truth-table">
+      <tr><th>A</th><th>B</th><th>A && B</th></tr>
+      <tr><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>0</td><td>1</td><td>0</td></tr>
+      <tr><td>1</td><td>0</td><td>0</td></tr>
+      <tr><td>1</td><td>1</td><td>1</td></tr>
+    </table>
+  </div>
+
+  <div class="gate">
+    <h2>OR Gate (A || B)</h2>
+    <p class="description">At least one must be 1 for the result to be 1, otherwise 0.</p>
+    <table class="truth-table">
+      <tr><th>A</th><th>B</th><th>A || B</th></tr>
+      <tr><td>0</td><td>0</td><td>0</td></tr>
+      <tr><td>0</td><td>1</td><td>1</td></tr>
+      <tr><td>1</td><td>0</td><td>1</td></tr>
+      <tr><td>1</td><td>1</td><td>1</td></tr>
+    </table>
+  </div>
+
+  <div class="gate">
+    <h2>NOR Gate (!(A || B))</h2>
+    <p class="description">Only 1 when both inputs are 0.</p>
+    <table class="truth-table">
+      <tr><th>A</th><th>B</th><th>!(A || B)</th></tr>
+      <tr><td>0</td><td>0</td><td>1</td></tr>
+      <tr><td>0</td><td>1</td><td>0</td></tr>
+      <tr><td>1</td><td>0</td><td>0</td></tr>
+      <tr><td>1</td><td>1</td><td>0</td></tr>
+    </table>
+  </div>
+
+  <div class="gate">
+    <h2>NAND Gate (!(A && B))</h2>
+    <p class="description">Only 0 when both inputs are 1.</p>
+    <table class="truth-table">
+      <tr><th>A</th><th>B</th><th>!(A && B)</th></tr>
+      <tr><td>0</td><td>0</td><td>1</td></tr>
+      <tr><td>0</td><td>1</td><td>1</td></tr>
+      <tr><td>1</td><td>0</td><td>1</td></tr>
+      <tr><td>1</td><td>1</td><td>0</td></tr>
+    </table>
+  </div>
+
+</body>
+</html>
